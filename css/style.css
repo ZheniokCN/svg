@@ -1,0 +1,160 @@
+.amimation-sun{
+    animation: sun 3s infinite;
+    offset-path: path('M-20,34 Q50,-25 200,34');
+    animation-timing-function: linear;
+}
+
+.amimation-moon{
+    animation: moon 3s infinite;
+    offset-path: path('M-20,34 Q50,-25 200,34');
+    animation-timing-function: linear;
+    animation-delay: 3s;
+}
+
+.animated-snow{
+    animation: snowing 5s 1 linear;
+}
+
+.snow-group-1{
+    animation-delay: 8s;
+}
+.snow-group-2{
+    animation-delay: 8.2s;
+}
+.theGrass{
+    animation: floor 20s infinite linear;
+}
+
+.tree-1{
+    animation: year1 20s infinite linear;
+}
+
+.tree-2{
+    animation: year2 20s infinite linear;
+}
+
+.tree-3{
+    animation: year3 20s infinite linear;
+}
+
+@keyframes sun {
+    0%{
+        offset-distance: 0%;
+    }
+    95%{
+       opacity: 1; 
+    }
+    100%{
+        offset-distance: 45%;
+        opacity: 0;
+    }
+}
+
+@keyframes year1 {
+    0%{
+        stroke:#46a655;
+    }
+    25%{
+        stroke:#c96907;
+    }
+    35%{
+        stroke: transparent;
+    }
+    55%{
+        stroke: transparent;
+    }
+    75%{
+        stroke:#c96907;
+    }
+    100%{
+        stroke:#46a655;
+    }
+}
+
+@keyframes snowing {
+    0%{
+        cy: 2;
+    }
+    30%{
+        cy: 98;
+    }
+    100%{
+        cy: 98;
+    }
+}
+
+@keyframes floor {
+    0%{
+        fill:#46a655;
+    }
+    25%{
+        fill:#8ea202;
+    }
+    35%{
+        fill: #f1fdf1;
+    }
+    55%{
+        fill: #f1fdf1;
+    }
+    75%{
+        fill:#8ea202;
+    }
+    100%{
+        fill:#46a655;
+    }
+}
+@keyframes year2 {
+    0%{
+        stroke:#b7f07d;
+    }
+    25%{
+        stroke: #f49d37;
+    }
+    35%{
+        stroke: transparent;
+    }
+    55%{
+        stroke: transparent;
+    }
+    75%{
+        stroke: #f49d37;
+    }
+    100%{
+        stroke:#b7f07d;
+    }
+}
+@keyframes year3 {
+    0%{
+        stroke:#7fdc48;
+    }
+    25%{
+        stroke:#ffb703;
+    }
+    35%{
+        stroke: transparent;
+    }
+    55%{
+        stroke: transparent;
+    }
+    75%{
+        stroke:#ffb703;
+    }
+    100%{
+        stroke:#7fdc48;
+    }
+}
+@keyframes moon {
+    0%{
+        offset-distance: 45%;
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 1;
+    }
+    100%{
+        offset-distance: 100%;
+    }
+}
